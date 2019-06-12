@@ -1,6 +1,19 @@
 # Control-Sales
 Software responsável por administrar entradas e saídas de produtos de uma loja.
 
-### oi estou aqui para testar.
+Welcome to StackEdit!
+===================
 
-![Tela de vendas](Imagens/1.png)
+
+Hey! I'm your first Markdown document in **StackEdit**[^stackedit]. Don't delete me, I'm very helpful! I can be recovered anyway in the **Utils** tab of the <i class="icon-cog"></i> **Settings** dialog.
+
+----------
+
+
+Documents
+-------------
+
+StackEdit stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
+
+> **Note:**
+
