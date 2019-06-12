@@ -30,9 +30,19 @@ Ordenação estoque
 
 Ordenação cadastro
 ------------------
-  Análogo à aba **Estoque**, na opção de cadastro também se tem as funções de ordenação.
+  Análogo à aba **Estoque**, na opção de **Cadastro** também se tem as funções de ordenação.
 
 ![Ordenação](Imagens/7.png)
 
 ![Ordenação](Imagens/7.png)
+
+Vendas
+------
+  Para serem registradas as saidas mediante as suas vendas, cique na aba Venda.
+ 
+ ![Venda](Imagens/1.png)
+ 
+ Nesta tela você irá registrar cada venda dos seus produtos. A principio, pesquise pelo pelo **Código, Nome ou Fabricante**; preenchendo uma das caixas de edição no inicio da tela. Logo após clique no botão **Pesquisar**.
+ 
+ ![Pesquisa](Imagens/12.png)
 
