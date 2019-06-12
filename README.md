@@ -62,3 +62,9 @@ Irá aparecer uma pequena janela de confirmação. Se tudo estiver correto com o
 
 Inserindo Quantidades
 ----------------------
+Será pedido, antes de confirmar a inserção do item na lista de compras, para informar a quantidade desejada do item.
+
+![Quantidade](Imagens/16.png)
+
+##Inserindo Itens na lista de venda##
+---------------------------------
