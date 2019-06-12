@@ -46,3 +46,19 @@ Vendas
  
  ![Pesquisa](Imagens/12.png)
 
+Os itens pesquisados irão aparecer na primeira tabela; para ser confirmado a quantidade atual em estoque, o valor de venda do item, etc.
+
+![Resultado pesquisa](Imagens/13.png)
+
+Confirmando item
+----------------
+Para acrescentar o item à lista de compras de seu cliente, clique 2 vezes em cima do **"Código, Nome, Fabricante, Estoque ou valor unitário"** do produto anteriormente pesquisado e inserido na tabela de conferência.
+
+![Lista de compras](Imagens/14.png)
+
+Irá aparecer uma pequena janela de confirmação. Se tudo estiver correto com o item escolhido, clique em **"Yes"**, do contrário **"No"**.
+
+![Confirmação de venda](Imagens/15.png)
+
+Inserindo Quantidades
+----------------------
