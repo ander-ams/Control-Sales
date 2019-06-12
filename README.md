@@ -3,6 +3,7 @@
 Software responsável por administrar entradas e saídas de produtos de uma loja.
 
 **Introdução:**
+-----------------
 
   Seja bem vindo ao ControlSales. Este software foi criado para todos aqueles que trabalham com vendas e armazenamento de produtos em estoque.
 
