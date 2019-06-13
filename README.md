@@ -65,7 +65,37 @@ Inserindo Quantidades
 Será pedido, antes de confirmar a inserção do item na lista de compras, para informar a quantidade desejada do item.
 
 ![Quantidade](Imagens/16.png)
-$$
+
 Inserindo Itens na lista de venda
-$$
 ---------------------------------
+Para confirmar a inserção do item com a quantidade desejada por seu cliente clique em **"Inserir"**.
+
+![Inserir venda](Imagens/17.png)
+
+Finalizando a Venda
+-------------------
+Para encerrar a venda, confirme os itens descritos na tabela gerada com a inserção dos ites, será mostrado o valor total à pagar na parte de baixo da tela. Clique em **"Finalizar venda"**.
+
+![Finalizando](Imagens/18.png)
+
+Relatório de vendas
+-------------------
+Para consultar como foram suas vendas no dia, clique na aba **"Relatório de vendas"**. Onde será mostrado o total de vendas, custos, lucros, média dos lucros por item e média dos lucros por item.
+
+![Relatorio](Imagens/19.png)
+
+##Salvando / Exportando | Abrindo / Importanto
+
+Salvar
+--------
+No menu **Arquivo** você encontrará duas opções: Abrir e Salvar.
+
+Clique em **Salvar**, para armazenar em um arquivo **".csv"** todos os dados cadastratos, realizando um backup.
+
+![Salvar](Imagens/21.png)
+
+Abrir
+-----
+No menu **"Arquivo"** clique em abrir. Selecione o arquivo de extenção **".csv"** desejado e clique em abrir para importar todos os dados de seu estoque anteriormente salvo.
+
+![Abrir](Imagens/22.png)
