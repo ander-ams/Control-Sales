@@ -15,6 +15,17 @@ void Stock::inserirPesquisa(Product a)
     search.push_back(a);
 }
 
+bool Stock::verificaNome(Product a)
+{
+    bool aux = false;
+
+    for(int i = 0; i < produto.size(); i++)
+        if(a.getNome() == produto[i].getNome()){
+            aux = true;
+        }
+    return aux;
+}
+
 void Stock::ordenarCod()
 {
     std::sort(produto.begin(), produto.end(), compararCod);

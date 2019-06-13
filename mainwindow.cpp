@@ -167,6 +167,13 @@ void MainWindow::on_btn_Cadastrar_clicked()
 
     if(produto.getNome() == ""){
         QMessageBox::critical(this,"Sales Control","Erro! Não é permitido inserir nome com menos de 3 caracteres.");
+    }else if(estoque.verificaNome(produto) != false){
+        QMessageBox::critical(this,"Sales Control","Erro! Produto já cadastrado");
+        ui->lineNome->clear();
+        ui->lineFabricante->clear();
+        ui->lineQtd->clear();
+        ui->lineCusto->clear();
+        ui->lineMargem->clear();
     }else if(produto.getFabricante() == ""){
         QMessageBox::critical(this,"Sales Control","Erro! Insira um fabricante ao item.");
     }else if(produto.getQtd() == 0.00){

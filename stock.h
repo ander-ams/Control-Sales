@@ -19,6 +19,7 @@ public:
     Stock();
     void inserirProduto(Product a);
     void inserirPesquisa(Product a);
+    bool verificaNome(Product a);
     void ordenarCod();
     void ordenarCodEstoque();
     void ordenarNome();
