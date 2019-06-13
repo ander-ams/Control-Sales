@@ -84,7 +84,7 @@ Para consultar como foram suas vendas no dia, clique na aba **"Relatório de ven
 
 ![Relatorio](Imagens/19.png)
 
-##Salvando / Exportando | Abrindo / Importanto
+## Salvando / Exportando | Abrindo / Importanto
 
 Salvar
 --------
