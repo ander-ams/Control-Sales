@@ -120,7 +120,7 @@ double Stock::getTotalVendas()
     double totalVendas = 0;
 
     for(auto a : produto){
-        totalVendas += a.getVenda();
+        totalVendas += a.getTotalvenda();
     }
 
     return totalVendas;
@@ -178,13 +178,13 @@ Product Stock::pesquisa(Product a)
                 return produto[i];
             }
         }
-    }else if(a.getNome() != ""){
+    }else if(a.getNome() != "0"){
         for(int i = 0; i < produto.size(); i++){
             if(a.getNome() == produto[i].getNome()){
                 return produto[i];
             }
         }
-    }else if(a.getFabricante() != ""){
+    }else if(a.getFabricante() != "0"){
         for(int i = 0; i < produto.size(); i++){
             if(a.getFabricante() == produto[i].getFabricante()){
                 return produto[i];
@@ -221,13 +221,15 @@ double Stock::somaVenda()
 
 double Stock::relatorioTotalVendas()
 {
-    double soma = 0;
+    Product soma;
+
+    soma.setTotalvenda(0);
 
     for(auto i : relatorioVendasTotais){
-        soma += i;
+        //soma += i;
     }
 
-    return soma;
+    return soma.getTotalvenda();
 }
 
 bool compararNome(Product a, Product b)

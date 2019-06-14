@@ -63,6 +63,24 @@ private slots:
 
     void on_tabela_Venda_cellDoubleClicked();
 
+    void on_lineCodVenda_returnPressed();
+
+    void on_lineNomeVenda_returnPressed();
+
+    void on_lineFabricanteVenda_returnPressed();
+
+    void on_line__Confirma_Qtd_returnPressed();
+
+    void on_lineNome_returnPressed();
+
+    void on_lineFabricante_returnPressed();
+
+    void on_lineQtd_returnPressed();
+
+    void on_lineCusto_returnPressed();
+
+    void on_lineMargem_returnPressed();
+
 private:
     Ui::MainWindow *ui;
 };

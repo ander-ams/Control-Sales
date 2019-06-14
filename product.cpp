@@ -191,8 +191,8 @@ void Product::setTotalvenda(double value)
 
 Product::Product()
 {
-    nome = "";
-    fabricante = "";
+    nome = "0";
+    fabricante = "0";
     custo = 0;
     venda = 0;
     totalvenda = 0;

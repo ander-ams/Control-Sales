@@ -38,17 +38,11 @@ void MainWindow::atualizarTabelaEstoque()
 
 void MainWindow::relatorio()
 {
-    double totalVendas = estoque.relatorioTotalVendas();
-    double totalCustos = estoque.getTotalCusto();
-    double totalLucros = estoque.getTotalLucros();
-    double mediaVendas = estoque.getMediaVendas();
-    double mediaLucros = estoque.getMediaLucros();
-
-    ui->label_Total_Vendas->setText("R$ " + QString::number(totalVendas));
-    ui->label_Total_custos->setText("R$ " + QString::number(totalCustos));
-    ui->label_Total_Lucros->setText("R$ " + QString::number(totalLucros));
-    ui->label_Media_Vendas->setText("R$ " + QString::number(mediaVendas));
-    ui->label_Media_Lucros->setText("R$ " + QString::number(mediaLucros));
+    ui->label_Total_Vendas->setText("R$ " + QString::number(estoque.getTotalVendas()));
+    ui->label_Total_custos->setText("R$ " + QString::number(estoque.getTotalCusto()));
+    ui->label_Total_Lucros->setText("R$ " + QString::number(estoque.getTotalLucros()));
+    ui->label_Media_Vendas->setText("R$ " + QString::number(estoque.getMediaVendas()));
+    ui->label_Media_Lucros->setText("R$ " + QString::number(estoque.getMediaLucros()));
 }
 
 void MainWindow::pesquisaVenda()
@@ -246,6 +240,8 @@ void MainWindow::on_btn_Incluir_Venda_clicked()
     ui->label_Confirma_Valor_Und->clear();
     ui->line__Confirma_Qtd->clear();
     ui->label_RS->clear();
+
+
 }
 
 void MainWindow::on_btn_Finalizar_Venda_clicked()
@@ -254,6 +250,9 @@ void MainWindow::on_btn_Finalizar_Venda_clicked()
 
     ui->tabela_Venda_2->clearContents();
     ui->label_Total_a_pagar->clear();
+
+    ui->tabela_Venda_2->removeRow(0);
+
 }
 
 void MainWindow::on_btn_Pesquisar_venda_clicked()
@@ -265,8 +264,7 @@ void MainWindow::on_tabela_Venda_cellDoubleClicked()
 {
     int i = ui->label_Secreta_Cod->text().toInt();
 
-    Product a = estoque.selecionaItem(i - 1); //Falta extrair texto do cod da tabela e trocar por row.
-
+    Product a = estoque.selecionaItem(i - 1);
     QMessageBox::StandardButton resp = QMessageBox::question(this, "Selecionar produto", "Você deseja selecionar este item?");
 
     if(resp == QMessageBox::Yes){
@@ -281,4 +279,50 @@ void MainWindow::on_tabela_Venda_cellDoubleClicked()
 
      }
 
+    ui->tabela_Venda->removeRow(0);
+}
+
+void MainWindow::on_lineCodVenda_returnPressed()
+{
+    on_btn_Pesquisar_venda_clicked();
+}
+
+void MainWindow::on_lineNomeVenda_returnPressed()
+{
+    on_btn_Pesquisar_venda_clicked();
+}
+
+void MainWindow::on_lineFabricanteVenda_returnPressed()
+{
+    on_btn_Pesquisar_venda_clicked();
+}
+
+void MainWindow::on_line__Confirma_Qtd_returnPressed()
+{
+    on_btn_Incluir_Venda_clicked();
+}
+
+void MainWindow::on_lineNome_returnPressed()
+{
+    ui->lineFabricante->setFocus();
+}
+
+void MainWindow::on_lineFabricante_returnPressed()
+{
+    ui->lineQtd->setFocus();
+}
+
+void MainWindow::on_lineQtd_returnPressed()
+{
+    ui->lineCusto->setFocus();
+}
+
+void MainWindow::on_lineCusto_returnPressed()
+{
+    ui->lineMargem->setFocus();
+}
+
+void MainWindow::on_lineMargem_returnPressed()
+{
+    on_btn_Cadastrar_clicked();
 }
